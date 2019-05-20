@@ -44,7 +44,10 @@ spec:
       - name: cfg
         configMap:
           name: k8s-custom-iptables
-
+      tolerations:
+      - key: consumer
+        operator: Exists
+        effect: NoSchedule
 ---
 apiVersion: v1
 kind: ConfigMap
