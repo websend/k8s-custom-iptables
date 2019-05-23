@@ -38,3 +38,10 @@ data:
 ```sh
 REGISTRY=gcr.io/my-registry make
 ```
+
+
+# Command
+
+```sh
+TARGETS="10.0.0.0/29" ./install.sh
+```
